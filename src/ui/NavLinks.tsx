@@ -1,14 +1,31 @@
+import styled from "styled-components";
+
+const StyledNavLinks = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+`;
+
+const StyledNavLink = styled.li`
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: var(--font-ps);
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+`;
+
 function NavLinks() {
-  function handleClickMenu(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-    console.log(e.target);
-  }
+  // function handleClickMenu(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+  //   console.log(e.target);
+  // }
 
   return (
-    <div>
-      <div onClick={handleClickMenu}>
-        <img src="../icons/hamburger.svg" alt="" />
-      </div>
-    </div>
+    <StyledNavLinks>
+      <StyledNavLink>Home</StyledNavLink>
+      <StyledNavLink>Portfolio</StyledNavLink>
+      <StyledNavLink>Contact Me</StyledNavLink>
+    </StyledNavLinks>
   );
 }
 

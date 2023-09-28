@@ -52,7 +52,7 @@ function Home() {
       <Section $alignItems="start">
         <Pictures pic="profile" />
         <Block $blockName="bla1">
-          <DivLine />
+          <DivLine style={{ marginBottom: "1rem" }} />
           <Heading $as="h1" $ff="irn">
             About Me
           </Heading>
@@ -69,7 +69,7 @@ function Home() {
           <WhiteButton>
             <StyledButtonSpan>GO TO PORTFOLIO</StyledButtonSpan>
           </WhiteButton>
-          <DivLine />
+          <DivLine style={{ marginTop: "2rem" }} />
         </Block>
       </Section>
 
