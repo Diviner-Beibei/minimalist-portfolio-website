@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import { StyledContainer } from "./Common";
 
 function AppLayout() {
   return (
@@ -9,7 +10,9 @@ function AppLayout() {
         <NavBar />
       </header>
       <main>
-        <Outlet />
+        <StyledContainer $gap="8rem">
+          <Outlet />
+        </StyledContainer>
       </main>
       <footer>
         <Footer />

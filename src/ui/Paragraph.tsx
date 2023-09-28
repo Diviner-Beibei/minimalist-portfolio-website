@@ -38,7 +38,7 @@ function Paragraph({
     <StyledParagraph
       $ff={fontFamily ? fontFamily : "--font-ps"}
       $color={textColor ? textColor : "--dark-black"}
-      $fs={fontSize ? fontSize : "16px"}
+      $fs={fontSize ? fontSize : "1.6rem"}
       $fw={fontWeight ? fontWeight : 400}
     >
       {children}

@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
   --dark-black: #33323D;
   --color--dark-green: #203A4C;
   --color-white: #ffffff;
+  --dark-green:#5FB4A2;
   --color-transparent: transparent;
   --font-irn: 'Ibarra Real Nova', serif;
   --font-ps: 'Public Sans', sans-serif;
