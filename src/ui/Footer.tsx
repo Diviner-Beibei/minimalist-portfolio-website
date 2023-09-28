@@ -20,7 +20,7 @@ function Footer() {
   return (
     <StyledFooter>
       <Logo fillColor="#fff" />
-      <NavLinks />
+      <NavLinks.Links />
       <MipLinks />
     </StyledFooter>
   );

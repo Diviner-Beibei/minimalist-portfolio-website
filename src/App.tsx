@@ -4,6 +4,7 @@ import GlobalStyles from "./styles/GlobalStyles";
 import AppLayout from "./ui/AppLayout";
 
 import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "portfolio",
+        element: <Portfolio />,
       },
     ],
   },

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import Logo from "./Logo";
-// import NavLinks from "./NavLinks";
+import NavLinks from "./NavLinks";
 
 const Navbar = styled.nav`
   display: flex;
@@ -10,18 +10,21 @@ const Navbar = styled.nav`
 `;
 
 function NavBar() {
-  function handleClickMenu(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-    console.log(e.target);
-  }
+  // function handleClickMenu(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+  //   console.log(e.target);
+  // }
 
   return (
     <div>
       <Navbar>
         <Logo />
-        <div onClick={handleClickMenu}>
-          <img src="../icons/hamburger.svg" alt="" />
-        </div>
-        {/* <NavLinks /> */}
+        <NavLinks>
+          <NavLinks.Toggle>
+            <NavLinks.NavBg>
+              <NavLinks.Links />
+            </NavLinks.NavBg>
+          </NavLinks.Toggle>
+        </NavLinks>
       </Navbar>
     </div>
   );
